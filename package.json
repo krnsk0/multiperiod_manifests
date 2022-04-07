@@ -1,0 +1,14 @@
+{
+  "name": "videojs-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jon kurinsky <jkurinsky@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve-demo": "http-server static -p 8000",
+    "start": "yarn run serve-demo & sleep 3 && open http://localhost:8000/"
+  },
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
+}

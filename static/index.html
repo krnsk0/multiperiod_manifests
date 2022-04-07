@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <link href="https://vjs.zencdn.net/7.19.0/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.19.0/video.min.js"></script>
+  <title>video js demo</title>
+</head>
+
+<body>
+  <video id="video-elm" controls class="video-js">
+    </p>
+  </video>
+</body>
+<script>
+  const manifest = './videos/manifest.mpd';
+  const player = videojs('video-elm', { controls: true, autoplay: true, preload: 'auto' });
+  player.on('ready', () => {
+    player.src(manifest);
+  })
+</script>
+
+</html>
